@@ -1,0 +1,86 @@
+@use 'src/styles/variables' as v;
+
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 7rem;
+  padding-bottom: 5rem;
+  border-radius: 5px;
+  border: none;
+  background: #fbfbfb;
+  -webkit-box-shadow: 10px 10px 23px 0px rgba(227, 227, 227, 1);
+  -moz-box-shadow: 10px 10px 23px 0px rgba(227, 227, 227, 1);
+  box-shadow: 10px 10px 23px 0px rgba(227, 227, 227, 1);
+
+  &-item {
+    margin-top: 2rem;
+    line-height: 3;
+    font-size: 1.2em;
+    font-weight: 600;
+
+    li {
+      display: flex;
+      align-items: center;
+      margin-right: 3rem;
+
+      .checkbox-label {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 1rem;
+      }
+
+      .checkbox-label input[type='checkbox'] {
+        margin-right: 0.5rem;
+        appearance: none;
+      }
+
+      .checkmark {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 20px;
+        height: 20px;
+        background: #fff;
+        border: 2px solid #e1e1e1;
+        border-radius: 50%;
+        margin-right: 1rem;
+        cursor: pointer;
+      }
+
+      .checkmark .icon {
+        color: #fff;
+      }
+
+      .checkbox-label input[type='checkbox']:checked + .checkmark {
+        background: v.$pink;
+        border-color: v.$pink;
+      }
+
+      .checkbox-label input[type='checkbox']:checked + .checkmark .icon {
+        display: block;
+      }
+
+      .edit-icon {
+        margin-left: 1rem;
+        cursor: pointer;
+        color: #000;
+      }
+
+      .delete-icon {
+        margin-left: 1.5rem;
+        cursor: pointer;
+        color: #000;
+      }
+    }
+  }
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}

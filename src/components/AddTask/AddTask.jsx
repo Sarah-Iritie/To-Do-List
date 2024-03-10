@@ -1,0 +1,26 @@
+import { useState } from 'react';
+import './AddTask.scss';
+
+export default function AddTask({ newTask }) {
+  const [inputValue, setInputValue] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    newTask(inputValue);
+    setInputValue('');
+  };
+
+  return (
+    <form onSubmit={handleSubmit} className="form">
+      <input
+        type="text"
+        value={inputValue}
+        onChange={(e) => setInputValue(e.target.value)}
+        className="form-input"
+      />
+      <button type="submit" className="form-btn">
+        Add
+      </button>
+    </form>
+  );
+}
