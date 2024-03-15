@@ -29,3 +29,116 @@
     background: #e7126b;
   }
 }
+
+/* ========== RESPONSIVE ========== */
+
+/* xs */
+@media (min-width: 350px) {
+  .container {
+    max-width: 350px;
+  }
+
+  .form-input {
+    width: 50%;
+  }
+
+  .form-btn {
+    display: none;
+  }
+
+  .plus-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .add-icon {
+    position: fixed;
+    color: v.$pink;
+    font-size: 2.5rem;
+    padding-top: 22rem;
+    margin-left: 6rem;
+  }
+}
+
+@media (min-width: 475px) {
+  .container {
+    max-width: 475px;
+  }
+
+  .form-input {
+    width: 60%;
+  }
+
+  .form-btn {
+    display: none;
+  }
+
+  .plus-icon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .add-icon {
+    position: fixed;
+    color: v.$pink;
+    font-size: 2.5rem;
+    padding-top: 22rem;
+    margin-left: 0.2rem;
+  }
+}
+
+/* sm */
+@media (min-width: 640px) {
+  .add-icon {
+    position: fixed;
+    font-size: 2.5rem;
+    padding-top: 22rem;
+    margin-left: -2.5rem;
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .add-icon {
+    padding-top: 20rem;
+    margin-left: -4rem;
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .add-icon {
+    display: none;
+  }
+
+  .form-btn {
+    display: block;
+  }
+
+  .form-input {
+    width: 50%;
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .form-input {
+    width: 47%;
+    margin-left: 0.5rem;
+  }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+  .form-input {
+    width: 47%;
+    margin-left: -1.5rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .form-input {
+    width: 47%;
+    margin-left: -1.5rem;
+  }
+}

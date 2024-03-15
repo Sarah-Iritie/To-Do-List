@@ -84,3 +84,145 @@
 .strikethrough {
   text-decoration: line-through;
 }
+
+/* ========== RESPONSIVE ========== */
+
+/* xs */
+@media (min-width: 350px) {
+  .container {
+    max-width: 350px;
+  }
+
+  .list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 430px;
+    margin: 0 auto;
+    margin-top: 4rem;
+    padding-bottom: calc(50px + 1rem);
+    margin-left: 0.5rem;
+    border: none;
+  }
+}
+
+@media (min-width: 475px) {
+  .container {
+    max-width: 475px;
+  }
+
+  .list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 430px;
+    margin: 0 auto;
+    margin-top: 4rem;
+    padding-bottom: calc(50px + 1rem);
+    margin-left: 2rem;
+    border: none;
+  }
+}
+
+/* sm */
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+
+  .list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 470px;
+    margin: 0 auto;
+    margin-top: 4rem;
+    padding-bottom: calc(50px + 1rem);
+    margin-left: 5rem;
+    border: none;
+  }
+}
+
+/* md */
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 480px;
+    margin: 0 auto;
+    margin-top: 6rem;
+    padding-bottom: calc(50px + 1rem);
+    margin-left: 10rem;
+    border: none;
+  }
+}
+
+/* lg */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+
+  .list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 700px;
+    margin: 0 auto;
+    margin-top: 6rem;
+    padding-bottom: 5rem;
+    margin-left: 10.5rem;
+    border: none;
+  }
+}
+
+/* xl */
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+
+  .list {
+    width: 800px;
+    margin-left: 15rem;
+  }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+
+  .list {
+    width: 900px;
+    margin-left: 19rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1920px;
+  }
+
+  .list {
+    width: 1080px;
+    margin-left: 25rem;
+  }
+}
+
+@media (min-width: 2560px) {
+  .container {
+    max-width: 2560px;
+  }
+
+  .list {
+    width: 1390px;
+    margin-left: 35rem;
+  }
+}
